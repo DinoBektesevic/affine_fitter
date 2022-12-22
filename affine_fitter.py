@@ -114,7 +114,7 @@ class AffineTransformFitter:
     affineT : `array-like`
         A 3 dimensional square matrix that represents the affine transform of
         `points1` to `points2` in the heterogeneous coordinate space. Evaluated
-        when call to `fit` is made.
+        when call gto `fit` is made.
     invAffineT : `array-like`
        A 3 dimensional square matrix that represents the inverse affine
        transform, i.e. the matrix that transforms `points2` to `points1`.
@@ -190,7 +190,7 @@ class AffineTransformFitter:
     def fit(
             self,
             points1=None,
-            points2=None,9
+            points2=None,
             costf = "L2",
             method="SLSQP",
             x0=(1, 0, 0, 0, 1, 0),
